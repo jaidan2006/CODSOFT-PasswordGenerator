@@ -2,9 +2,9 @@ import random
 import string
 
 def generate_password(length):
-    # Define possible characters: letters, digits, and special characters
+    
     characters = string.ascii_letters + string.digits + string.punctuation
-    # Randomly choose characters and join them
+     
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
